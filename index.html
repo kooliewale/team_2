@@ -1,294 +1,112 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="msapplication-tap-highlight" content="no">
-
-    <title> Team </title>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/material-cards-auto-height.css">
+    <title>Material Cards </title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,200,500,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="dist/material-cards.css">
     <style type="text/css">
+    html {
+        position: relative;
+        min-height: 100%;
+    }
 
-        html {
-            position: relative;
-            min-height: 100%;
-        }
+    body {
+        background-color: #ECEFF1;
+        color: #37474F;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+    }
 
-        body {
-            background-color: #ECEFF1;
-            color: #37474F;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 300;
-            font-size: 16px;
-        }
+    h1,
+    h2,
+    h3 {
+        font-weight: 200;
+    }
 
-        h1, h2, h3 {
-            font-weight: 200;
-        }
+/*  scoll  */
+.mc-description {
+  max-height: 400px; /* Adjust the height as needed */
+  overflow-y: auto;
+}
+.mat-card-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Adjust these values as needed */
+  height: 50px; /* Initial height */
+  line-height: 50px; /* Ensures single line truncation */
+}
 
-        .grid-item {
-            width: 390px;
-            padding: 15px;
-        }
+.mat-card-content.expand {
+  /* Style for expanded content (optional) */
+  overflow: auto;
+  height: auto;
+  white-space: normal;
+}
 
     </style>
 </head>
+
 <body>
-<section class="container">
-    <div class="page-header">
-        <h1> Meet Our Team<br>
-            <small>Management Team </small></h1>
-    </div>
-    <div class="row active-with-click grid">
-        <div class="grid-item">
-            <article class="material-card Red">
-                <h2>
-                    <span> Utsav Kumar</span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                         Founder,Director & CEO
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/team/utsav_1.jpg">
-                    </div>
-                    <div class="mc-description">
-                        Mr. Utsav Kumar holds the position of Director  & CEO at PhoodCry Pvt Ltd, operating under the brand name "CoolieWale." As the Director  & CEO, Mr. Kumar is responsible for overseeing the overall strategic direction, operational management, and business development of the company. His leadership ensures that CoolieWale maintains its commitment to innovation and customer satisfaction, driving the company's growth and market presence in the competitive logistics industry. Under his guidance, PhoodCry Pvt Ltd continues to enhance its service offerings, streamline operations, and expand its reach, solidifying its reputation as a reliable and efficient brand in the logistics sector.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                   <!--  <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a> -->
-                    <a href="https://www.linkedin.com/in/utsavgupta150102/" class="fa fa-fw fa-linkedin"></a>
-                    <!-- <a class="fa fa-fw fa-github"></a> -->
-                </div>
-            </article>
+    <section class="container">
+        <div class="page-header">
+            <h1> Management Team<br>
+                <small> Management Team at PhoodCry Catering Private Limited</small></h1>
         </div>
-        <div class="grid-item">
-            <article class="material-card Teal">
-                <h2>
-                    <span>Risabh Kumar</span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                        Co-founder & COO
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/team/rishabh.png">
-                    </div>
-                    <div class="mc-description">
-                        Mr. Rishabh Singh is the Chief Operating Officer (COO) at M/s PhoodCry Pvt Ltd, known for its brand "CoolieWale". He holds a Bachelor of Engineering in Artificial Intelligence and Data Science from D.Y. Patil College of Engineering, Akurdi, Pune. Rishabh's expertise spans programming languages like Python, C, and C++, and frameworks such as ReactJS and NodeJS, alongside proficiency in databases like MongoDB and MySQL. His career includes teaching roles at ByteXL and Barclays, where he significantly boosted student performance. Key projects he led include Remote Lab Management Software, Adaptive SignalSense, and the award-winning CoolieWale platform. His achievements include being the First Year Department Topper and winning the Best Extracurricular Student award. He also holds certifications from IBM and Google.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                 <!--    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a> -->
-                    <a href="https://www.linkedin.com/in/rishabh1109/" class="fa fa-fw fa-linkedin"></a>
-                    <a href="https://github.com/Rishabhsingh1109" class="fa fa-fw fa-github"></a>
-                </div>
-            </article>
+        <div id="management-team-section"></div>
+        <div class="page-header">
+            <h1> Advisory Team<br>
+                <small>Advisory Team PhoodCry Catering Private Limited</small></h1>
         </div>
-        <div class="grid-item">
-            <article class="material-card Purple">
-                <h2>
-                    <span>Priyanshu Kumar</span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                        Co-founder & CTO
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/team/priyanshu.jpg">
-                    </div>
-                    <div class="mc-description">
-                    As the Chief Technology Officer (CTO)  at M/s PhoodCry Pvt Ltd, under the brand name "CoolieWale," Mr. Priyanshu Singh plays a pivotal role in driving the company's technological advancements. With a solid academic foundation in Metallurgical and Materials Engineering from the National Institute of Technology, Jamshedpur, and an impressive track record of professional achievements, Priyanshu brings a wealth of expertise to the team. His experience includes integrating advanced backend solutions, such as Kafka and Redis, to enhance system performance and reduce operational costs. Priyanshu has a proven ability to develop and deploy complex projects, including an online judge platform and a Facebook DM helpdesk, demonstrating his proficiency in various technologies such as Node.js, React.js, Docker, and AWS. His technical acumen, combined with his innovative approach to solving challenges, ensures that CoolieWale remains at the forefront of technological excellence.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                  <!--   <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a> -->
-                    <a href="https://www.linkedin.com/in/priyanshudevsingh/" class="fa fa-fw fa-linkedin"></a>
-                    <a href="https://github.com/priyanshudevsingh" class="fa fa-fw fa-github"></a>
-                </div>
-            </article>
+        <div id="advisory-team-section"></div>
         </div>
-    <!--</div>-->
-    <!--<div class="row active-with-hover">-->
-        <div class="grid-item">
-            <article class="material-card Deep-Purple">
-                <h2>
-                    <span> Mrinal </span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                         Head-Technical
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/team/mrinal_pic.jpg">
-                    </div>
-                    <div class="mc-description">
-                      As the Head-Technical at M/s PhoodCry Pvt Ltd, operating under the brand name "CoolieWale," Mr. Mrinal Varshney leverages his extensive background in computer science and engineering to drive data-driven decision-making processes. A distinguished graduate from Motilal Nehru National Institute of Technology, Allahabad, Mrinal has demonstrated exceptional proficiency in data analysis, web development, and backend systems. His experience includes playing a crucial role in developing CoolieWale’s web application, showcasing his skills in technologies such as React.js, Node.js, and Tailwind CSS. Mrinal’s projects, like Create Flow and Set-Off, highlight his ability to integrate complex functionalities and enhance user experiences through real-time and responsive design. His technical acumen, combined with a keen interest in system design and data structures, ensures that CoolieWale's data analytics strategies are both innovative and effective, driving the brand towards sustained growth and excellence.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-                <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <!-- <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a> -->
-                    <a href="https://www.linkedin.com/in/mrinal-varshney-971a27250/" class="fa fa-fw fa-linkedin"></a>
-                    <a href="https://github.com/MrinalVarshney" class="fa fa-fw fa-github"></a>
-                </div>
-            </article>
-        </div>
-    </div>
-     <div class="page-header">
-        <h1> <br>
-            <small>Advisory Team </small></h1>
-    </div>
-        <div class="grid-item">
-            <article class="material-card Deep-Orange">
-                <h2>
-                    <span> Vivek Kumar</span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                        Lead Consultant - Business Development
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/misc/avatar-3637561_1280.png">
-                    </div>
-                    <div class="mc-description">
-                        We are pleased to announce that Mr. Vivek Kumar has joined PhoodCry Pvt Ltd under our brand name "CoolieWale" as the Lead Consultant for Business Development. With an extensive background in management consulting, business strategy, and marketing, Vivek brings a wealth of experience and expertise to our team. Vivek's role at CoolieWale will focus on driving business development initiatives, crafting strategic partnerships, and exploring new market opportunities to propel our brand to new heights. His vast experience and strategic insights will be invaluable as we continue to expand our services and enhance our market presence. We are confident that his expertise and leadership will significantly contribute to the continued success and growth of CoolieWale.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-               <!--  <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div> -->
-            </article>
-        </div>
-        <div class="grid-item">
-            <article class="material-card Pink">
-                <h2>
-                    <span> Ms. Naina Singh</span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                        Lead Consultant – Human Resource
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/misc/icons-842855_640.png">
-                    </div>
-                    <div class="mc-description">
-                      Welcome to the Advisory Team of CoolieWale, the innovative brand under M/s PhoodCry Pvt Ltd. Our team is comprised of dedicated professionals who bring a wealth of experience and expertise to our organization. We are proud to introduce our esteemed Lead Consultant - Human Resource, Ms. Naina Singh. Ms. Naina Singh is a distinguished professional with an extensive background in human resource management, education, and nutrition. She holds a diverse range of qualifications and has made significant contributions in her field. Ms. Singh aims to leverage her comprehensive academic background and diverse professional experiences to drive organizational growth and success. She has a strong passion for continuous learning and is dedicated to promoting holistic well-being in both educational and organizational contexts. Ms. Naina Singh's multifaceted expertise and dedication make her an invaluable asset to the CoolieWale brand and the entire M/s PhoodCry Pvt Ltd team. Her leadership in Human Resources is pivotal to our mission of fostering a thriving, well-rounded, and innovative organizational culture.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-           <!--      <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div> -->
-            </article>
-        </div>
-        <div class="grid-item">
-            <article class="material-card Green">
-                    <h2>
-                    <span> SIDDHARTH BOSE</span>
-                    <strong>
-                        <i class="fa fa-fw fa-star"></i>
-                        Finanacial Advisor
-                    </strong>
-                </h2>
-                <div class="mc-content">
-                    <div class="img-container">
-                        <img class="img-responsive" src="https://kooliewale.github.io/team/misc/avatar-3637425_1280.png">
-                    </div>
-                    <div class="mc-description">
-                      As the Financial Advisor at M/s PhoodCry Pvt Ltd, operating under the brand name "CoolieWale," Mr. Siddharth Bose brings a wealth of expertise in both technology and finance to the management team. With a robust background in artificial intelligence, machine learning, and data science, he excels at transforming complex data into actionable insights and developing intelligent solutions that drive innovation. His extensive experience as a full stack and app developer ensures that CoolieWale’s digital infrastructure is both cutting-edge and reliable. Moreover, Siddharth’s financial acumen, honed through his roles at prominent financial institutions, enables him to effectively manage the financial aspects of technology projects, ensuring they are both cost-efficient and impactful. His leadership in open-source communities and collaboration with industry giants like Google, Intel, and Microsoft further underscores his commitment to leveraging technology for strategic growth and operational excellence at CoolieWale.
-                    </div>
-                </div>
-                <a class="mc-btn-action">
-                    <i class="fa fa-bars"></i>
-                </a>
-       <!--          <div class="mc-footer">
-                    <h4>
-                        Social
-                    </h4>
-                    <a class="fa fa-fw fa-facebook"></a>
-                    <a class="fa fa-fw fa-twitter"></a>
-                    <a class="fa fa-fw fa-linkedin"></a>
-                    <a class="fa fa-fw fa-google-plus"></a>
-                </div> -->
-            </article>
-        </div>
-    </div>
-</section>
-
-<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="js/jquery.material-cards.min.js"></script>
-<script src="https://unpkg.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-<script>
+    </section>
+    <script src="js_h/color.js"></script>
+    <script src="js_h/random.js"></script>
+    <script src="js_h/advisory_team.js"></script>
+    <script src="js_h/management_team.js"></script>
+    <script src="js_h/populate.js"></script>
+    <script src="js_h/html_dom.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
     $(function() {
+        $('.material-card > .mc-btn-action').click(function() {
+            var card = $(this).parent('.material-card');
+            var icon = $(this).children('i');
+            icon.addClass('fa-spin-fast');
 
-        var $grid = $('.grid').masonry({
-            itemSelector: '.grid-item',
-            columnWidth: 390,
+            if (card.hasClass('mc-active')) {
+                card.removeClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-arrow-left')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-bars');
+
+                }, 800);
+            } else {
+                card.addClass('mc-active');
+
+                window.setTimeout(function() {
+                    icon
+                        .removeClass('fa-bars')
+                        .removeClass('fa-spin-fast')
+                        .addClass('fa-arrow-left');
+
+                }, 800);
+            }
         });
-
-        $('.material-card').materialCard();
-
-        $('.material-card').on('shown.material-card hidden.material-card', function (event) {
-            $grid.masonry();
-        });
-
     });
-</script>
+    </script>
 </body>
+
 </html>
